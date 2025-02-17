@@ -13,6 +13,9 @@ public class LoginTest {
     WebDriver driver;
     LoginPage loginPage;
     String baseURL="https://qa1.studymoo.com/einstein-freshair/touch/index.jsp";
+    String username="test.admin19";
+    String password="Security!_Test@QA@!";
+    String role="Administrator";
 
     @BeforeClass
     public void setUp() {
@@ -25,7 +28,7 @@ public class LoginTest {
     public void testValidLogin() throws InterruptedException {
         try {
             // Perform login
-            loginPage.login("test.admin19", "Security!_Test@QA@!", "Administrator");
+            loginPage.login(username, password, role);
 
             // Take screenshot after login
             Thread.sleep(2000);
