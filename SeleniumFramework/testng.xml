@@ -1,0 +1,8 @@
+<suite name="TestSuite">
+    <test name="Selenium Tests">
+        <classes>
+            <class name="testcases.LoginTest"/> <!-- Runs First -->
+            <class name="testcases.ReportsTest"/> <!-- Runs After LoginTest -->
+        </classes>
+    </test>
+</suite>

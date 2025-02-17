@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <test thread-count="5" name="Selenium Tests(failed)">
+    <classes>
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testValidLogin"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.ReportsTest">
+        <methods>
+          <include name="R7B_Listofcoursesremainingtograduate"/>
+          <include name="StandardReports"/>
+          <include name="R4_StudentsemesterGPAreport"/>
+          <include name="R7A_Listofcoursesremainingtograduate"/>
+          <include name="setUp"/>
+          <include name="R2_Listofstudentsenrolledbyyear"/>
+          <include name="R8_StudentsGraduatingInSpring2025"/>
+          <include name="R1_Studentenrollmentbynationality"/>
+          <include name="R5_StudentYearlyGPAreport"/>
+          <include name="R9_StudentsNeedingLessThan12CreditsToGraduate"/>
+          <include name="R6_StudentCGPAreport"/>
+          <include name="tearDown"/>
+          <include name="R3_Listofstudentsnotpassed"/>
+          <include name="R7C_Listofallcoursesremainingtograduate"/>
+        </methods>
+      </class> <!-- testcases.ReportsTest -->
+    </classes>
+  </test> <!-- Selenium Tests(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
