@@ -12,11 +12,12 @@ import utilities.VisiblePageScreenshot;
 public class LoginTest {
     WebDriver driver;
     LoginPage loginPage;
+    String baseURL="https://qa1.studymoo.com/einstein-freshair/touch/index.jsp";
 
     @BeforeClass
     public void setUp() {
         driver = DriverManager.getDriver();
-        driver.get("https://qa1.studymoo.com/einstein-freshair/touch/index.jsp");
+        driver.get(baseURL);
         loginPage = new LoginPage(driver);
     }
 
